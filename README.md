@@ -14,11 +14,16 @@ In this assignment, we created LIRI. LIRI is like iPhone's SIRI. However, while 
 ### How to use LIRI
 The following are the commands you can give LIRI in the command line:<br>
 
-node liri.js movie-this 'input movie title here'<br>
-node liri.js movie this<br>
-node liri.js concert-this 'input band name here'<br>
-node liri.js spotify-this-song 'input song name here'<br>
-node liri.js do-what-it-says<br>
-
-
+### node liri.js movie-this 'input movie title here'<br>
+![movie-this](./images/movie-this.png)
+### node liri.js movie this<br>
+![movie-this-none](./images/movie-this-none.png) <br>
+### In the absence of a movie after the movie-this command liri will default to the movie Mr. Nobody<br><br>
+### node liri.js concert-this 'input band name here'<br>
+![concert-this](./images/concert-this.png) <br>
+### node liri.js spotify-this-song 'input song name here'<br>
+![spotify-this-song](./images/spotify-this-song.png) <br>
+### node liri.js do-what-it-says<br>
+![do-what-it-says](./images/do-what-it-says.png) <br>
+### this command takes text from a .txt file and runs it through the spotify API and gives back the song information that is in the .txt file.
 To see this and other projects go to: https://ryanroyce.github.io/portfolio/
