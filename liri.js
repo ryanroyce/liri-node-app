@@ -48,5 +48,28 @@ function concThis() {
         });
 };
 
+//writing the spotify-this-song function to search Spotify's API and return the requested info to the command line
+function spotThis() {
+    // this piece of code is from the spotify API in the NPM information to check for errors and otherwise console.log the command input
+    spotify.search({ type: 'track', query: search }, function (err, data) {
+        // creating a variable to make it shorter to console.log the JSON data from spotify
+        var spot = data.tracks;
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+        else {
+            // console logging all the JSON just like from the other APIs
+            console.log("--------------------");
+            console.log("Artist: " + spot.items[0].artists[0].name);
+            console.log("Track Name: " + spot.items[0].name);
+            console.log("Preview link: " + spot.items[0].preview_url);
+            console.log("Album: " + spot.items[0].album.name);
+            console.log("--------------------");
+
+        };
+    });
+};
+
 movieThis();
 concThis();
+spotThis();
